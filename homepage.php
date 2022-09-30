@@ -9,4 +9,4 @@
 <?php get_header(); ?>
 <!--  code goes here  -->
 <h1>hello world test</h1>
-<?php get_footer();?>
+<?php get_footer();?> 
