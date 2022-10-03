@@ -24,6 +24,21 @@ function jc_block_patterns() {
 		)
 	);
 
+	register_block_pattern(
+		'jc-block-patterns/jc-banner-layout',
+		array(
+			'title'       => __( 'Banner Layout', 'jc-block-patterns' ),
+			
+			'description' => _x( 'A simple set of blocks to encourage people to join the membership', 'jc-block-patterns' ),
+			
+			'content'     => "<!-- wp:image -->\r\n<figure class=\"wp-block-image\"><img alt=\"\"/></figure>\r\n<!-- /wp:image -->\r\n\r\n<!-- wp:quote -->\r\n<blockquote class=\"wp-block-quote\"><p></p></blockquote>\r\n<!-- /wp:quote -->",
+			
+			'categories'  => array( 'banner' ),
+		)
+	);
+
+	
+
 }    
 
 add_action( 'init', 'jc_block_patterns' );
