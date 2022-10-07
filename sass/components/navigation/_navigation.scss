@@ -25,13 +25,15 @@ ul {
 				img {
 					padding: 3%;
 					height:50px;
-					width:40px;
+					width:50px;
 					margin: 0%;
 				}
 			}
 		}
 }
-
+.entry-title {
+	display: none;
+}
 .main-navigation {
 	display: block;
 	width: 100%;

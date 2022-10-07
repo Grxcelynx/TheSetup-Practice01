@@ -1,0 +1,81 @@
+footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 1%;
+    margin: 2% 0% 0% 0% ;
+    letter-spacing: 3px;
+    font-weight: 600;
+    // background:linear-gradient(0deg, rgba(252, 170, 252, 0.1), rgba(252, 170, 252, 0.1));
+}
+
+.site-footer{
+    width: 100%;
+    // height: 20vh;
+    height: auto;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    background-image:
+    linear-gradient(45deg, rgb(251, 109, 166) 25%, transparent 25%),
+    linear-gradient(-45deg, rgb(251, 109, 166) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgb(251, 109, 166) 75%),
+    linear-gradient(-45deg, transparent 75%, rgb(251, 109, 166) 75%);
+    background-size:20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+
+    a{
+        color: black;
+    }
+}
+
+.site-info {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.entry-footer {
+    display: none;
+}
+.footerBox{
+    position: relative;
+    width: 100%;
+    float: right;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: 0;
+    padding: 3%;
+}
+.footerBox ul{
+    list-style-type: none;
+    // margin-top: 60px;
+}
+.footerBox a{
+    text-decoration: none;
+    color: black;
+}
+
+.footerBox ul li{
+    
+    font-weight: bolder;
+    text-transform: uppercase;
+    // margin: 20px 20px;
+    color: black;
+}
+.footerBox ul li a:hover{
+    color: rgb(253, 8, 49);
+}
+.footerBox ul li:active{
+}
+
+.socialMedia i{
+    padding: 1%;
+}
+.socialMedia i:hover{
+}
+.socialMedia i:active{
+}
+
+
+
+
+
+
+
