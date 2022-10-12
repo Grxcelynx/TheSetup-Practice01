@@ -919,6 +919,7 @@ footer {
   margin: 2% 0% 0% 0%;
   letter-spacing: 3px;
   font-weight: 600;
+  height: auto;
 }
 
 .site-footer {
@@ -949,7 +950,7 @@ footer {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0;
-  padding: 3%;
+  padding: 0%;
 }
 
 .footerBox ul {
@@ -980,6 +981,8 @@ footer {
 .banner-section {
   height: auto;
   width: 100%;
+  margin: 0%;
+  top: 0%;
 }
 .banner-section img {
   height: 45vh;
@@ -996,7 +999,7 @@ footer {
   top: 35%;
   left: 30%;
   text-transform: uppercase;
-  color: #093209;
+  color: #065b06;
 }
 
 /*--------------------------------------------------------------
