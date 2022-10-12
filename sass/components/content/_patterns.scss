@@ -1,0 +1,35 @@
+.container-1{
+    margin: 2%;
+
+    .benefit-col1{
+        background-color: white;
+        padding: 2%;
+        h2{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: rgb(115,84,111);
+
+        }
+
+        p{
+            font-size: 0.8rem;
+            font-weight: 400;
+            padding: 2% 15%;
+        }
+
+        .wp-block-button{
+            width: 100%;
+            justify-content: center;
+        }
+
+        .wp-block-button__link{
+            width: auto;
+            padding: 1% 2% !important;
+            margin: 10%;
+            font-weight: 300;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+}

@@ -10,7 +10,7 @@
 
 
 <div class="home-page">
-
+<?php get_template_part( 'template-parts/banner'); ?>
     <?php
 
         while ( have_posts() ) :
@@ -26,8 +26,8 @@
         endwhile; // End of the loop.
     ?>
 
-    <?php get_template_part( 'template-parts/banner');
- ?>
+
+
     
 </div>
 

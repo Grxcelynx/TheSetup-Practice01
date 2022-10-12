@@ -1002,6 +1002,39 @@ footer {
   color: #065b06;
 }
 
+/* Patterns
+--------------------------------------------- */
+.container-1 {
+  margin: 2%;
+}
+.container-1 .benefit-col1 {
+  background-color: white;
+  padding: 2%;
+}
+.container-1 .benefit-col1 h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #73546f;
+}
+.container-1 .benefit-col1 p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 2% 15%;
+}
+.container-1 .benefit-col1 .wp-block-button {
+  width: 100%;
+  justify-content: center;
+}
+.container-1 .benefit-col1 .wp-block-button__link {
+  width: auto;
+  padding: 1% 2% !important;
+  margin: 10%;
+  font-weight: 300;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
