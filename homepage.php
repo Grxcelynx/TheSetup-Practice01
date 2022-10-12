@@ -25,6 +25,9 @@
             
         endwhile; // End of the loop.
     ?>
+
+    <?php get_template_part( 'template-parts/banner');
+ ?>
     
 </div>
 
