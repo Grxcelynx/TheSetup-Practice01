@@ -108,6 +108,7 @@ function thesetup_practice01_customize_preview_js() {
 add_action( 'customize_preview_init', 'thesetup_practice01_customize_preview_js' );
 
 
+// functions to register the arrays for the custom footer settings
 
 function add_text_input($wp_customize, $name, $label, $section, $default = ''){
     $wp_customize->add_setting($name,
@@ -146,3 +147,23 @@ function add_image($wp_customize, $name, $label, $section){
         'section'   => $section
     ) ));
 }
+
+
+// testing out custom color section 
+
+function thesetup_practice01_color_customize_register( $wp_customize ) {
+    // GETTING CUSTOM COLOR 
+    $wp_customize->add_setting( 'customize_color_one' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_color_one', array(
+        'label'        => __( 'Custom Color', 'thesetup_practice01' ),
+        'section'    => 'colors',
+    ) ) );
+}
+add_action( 'customize_register', 'thesetup_practice01_color_customize_register' );
+
+
+

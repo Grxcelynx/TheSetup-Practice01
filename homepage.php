@@ -8,7 +8,6 @@
 ?>  
 <?php get_header(); ?>
 
-
 <div class="home-page">
 <?php get_template_part( 'template-parts/banner'); ?>
     <?php

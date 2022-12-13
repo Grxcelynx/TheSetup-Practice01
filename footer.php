@@ -27,7 +27,7 @@
     <footer id="colophon" class="site-footer">
         <!-- LOGO ROW -->
         <div class="footerLogo">
-            <a href="#"><img src="<?php echo esc_url($footer_logo)?>" alt="love unmasked logo"></a>
+            <a href="#"><img src="<?php echo esc_url($footer_logo)?>" alt="grxcelyn logo"></a>
         </div>
         <!-- SOCIAL MEDIA ROW -->
         <div class="socialMedia">
@@ -60,8 +60,8 @@
             ))
         ?>
         <!-- COPYRIGHT -->
-        <div class="footerCopyright">
-            <span>© 2021 Love Unmasked | All Rights Reserved</span>
+        <div class="footerCopyright" >
+            <span>© Grxcelyn</span>
         </div>
     </footer><!-- #colophon -->
 </div><!-- #page -->

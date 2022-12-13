@@ -911,71 +911,130 @@ ul {
 --------------------------------------------- */
 /* Footer
 --------------------------------------------- */
-footer {
+footer.site-footer {
   width: 100%;
-  height: auto;
-  position: relative;
-  padding: 1%;
-  margin: 2% 0% 0% 0%;
-  letter-spacing: 3px;
-  font-weight: 600;
-  height: auto;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B2021;
+  bottom: 0;
 }
-
-.site-footer {
-  width: 100%;
-  height: auto;
-  color: black;
-  background-color: white;
-  background-image: linear-gradient(45deg, #fb6da6 25%, transparent 25%), linear-gradient(-45deg, #fb6da6 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #fb6da6 75%), linear-gradient(-45deg, transparent 75%, #fb6da6 75%);
-  background-size: 20px 20px;
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+footer.site-footer #footer-id {
+  width: auto;
+  margin: 20px 0px 30px 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
-.site-footer a {
-  color: black;
+footer.site-footer #footer-id ul {
+  display: flex;
+  justify-content: center;
 }
-
-.site-info {
-  background-color: rgba(255, 255, 255, 0.5);
+footer.site-footer #footer-id li {
+  list-style: none;
 }
-
-.entry-footer {
-  display: none;
-}
-
-.footerBox {
-  position: relative;
-  width: 100%;
-  float: right;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 0;
-  padding: 0%;
-}
-
-.footerBox ul {
-  list-style-type: none;
-}
-
-.footerBox a {
+footer.site-footer #footer-id a {
   text-decoration: none;
   color: black;
+  font-size: 14px;
+}
+footer.site-footer #footer-id .menu-footer-menu-container {
+  display: flex;
+  justify-content: center;
+}
+footer.site-footer #footer-id .right-side-line::after {
+  color: white;
+  content: "|";
+}
+footer.site-footer #footer-id .right-side-line {
+  margin-right: 10px;
+}
+footer.site-footer #footer-id .right-side-line a {
+  margin-right: 10px;
+}
+footer.site-footer .footerLogo {
+  margin-top: 25px;
+}
+footer.site-footer .footerLogo img {
+  width: 245px;
+  height: 49px;
+}
+footer.site-footer .socialMedia {
+  margin-top: 20px;
+}
+footer.site-footer .socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer.site-footer .socialMedia ul li {
+  margin: 0px 16px 0px 16px;
+}
+footer.site-footer .socialMedia ul li img {
+  width: 45px;
+}
+footer.site-footer .menu-footer-container #footer-id {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+footer.site-footer .menu-footer-container #footer-id .menu-item a {
+  color: red;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+footer.site-footer .menu-footer-container #footer-id .menu-item::after {
+  position: absolute;
+  content: " |";
+  padding-left: 0px;
+  height: 100%;
+  color: pink;
+}
+footer.site-footer .menu-footer-container #footer-id .menu-item:last-of-type:after {
+  display: none;
+}
+footer.site-footer .footerCopyright {
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+footer.site-footer .footerCopyright span {
+  font-size: 12px;
 }
 
-.footerBox ul li {
-  font-weight: bolder;
-  text-transform: uppercase;
-  color: black;
-}
+@media only screen and (max-width: 576px) {
+  footer.site-footer {
+    padding: 40px 0px 60px 0px;
+    width: 100%;
+    justify-content: unset;
+    height: auto;
+  }
+  footer.site-footer #footer-id {
+    flex-direction: column;
+  }
+  footer.site-footer #footer-id li {
+    line-height: 250%;
+    margin-right: none;
+    width: 100%;
+    text-align: center;
+  }
+  footer.site-footer #footer-id .right-side-line a {
+    margin-right: 0 !important;
+  }
+  footer.site-footer .socialMedia {
+    margin-top: 40px;
+  }
 
-.footerBox ul li a:hover {
-  color: #fd0831;
+  .right-side-line::after {
+    display: none;
+  }
 }
-
-.socialMedia i {
-  padding: 1%;
-}
-
 /* Banner
 --------------------------------------------- */
 .banner-section {
@@ -999,7 +1058,6 @@ footer {
   top: 35%;
   left: 30%;
   text-transform: uppercase;
-  color: #065b06;
 }
 
 /* Patterns
