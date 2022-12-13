@@ -11,44 +11,59 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="footerBox">
-        	<?php
-            	wp_nav_menu(array(
-                	'menu' => 'Nav Menu',
-                	'theme_location' => 'footer-menu',
-                	'menu_class' => 'footer-menu',
-                	'menu_id' => 'footer-id'
-            	))
-        	?>
+<?php 
+    $footer_logo = get_theme_mod('footer_logo');
 
+    $instagram_icon = get_theme_mod('instagram_icon');
+    $twitter_icon = get_theme_mod('twitter_icon');
+    $facebook_icon = get_theme_mod('facebook_icon');
+    $youtube_icon = get_theme_mod('youtube_icon');
+
+    $instagram_url = get_theme_mod('ig_url');
+    $twitter_url = get_theme_mod('twitter_url');
+    $facebook_url = get_theme_mod('fb_url');
+    $yt_url = get_theme_mod('yt_url');
+?>
+    <footer id="colophon" class="site-footer">
+        <!-- LOGO ROW -->
+        <div class="footerLogo">
+            <a href="#"><img src="<?php echo esc_url($footer_logo)?>" alt="love unmasked logo"></a>
         </div>
-        
-		<div class="footerBox">
-            <p>&copy; Grxcelyn Development</p>
+        <!-- SOCIAL MEDIA ROW -->
+        <div class="socialMedia">
+            <ul>
+                <?php the_widget('footer-sidebar-2'); ?>
+                <?php if($instagram_url && $instagram_icon):?>
+                    <a href="<?php echo esc_url($instagram_url)?>"><li><img src="<?php echo esc_url($instagram_icon)?>" alt="instagram footer icon"></li></a>
+                <?php endif; ?>
+
+                <?php if($facebook_url && $facebook_icon):?>
+                    <a href="<?php echo esc_url($facebook_url)?>"><li><img src="<?php echo esc_url($facebook_icon)?>" alt="facebook footer icon"></li></a>
+                <?php endif; ?>
+
+                <?php if($twitter_url && $twitter_icon):?>
+                    <a href="<?php echo esc_url($twitter_url)?>"><li><img src="<?php echo esc_url($twitter_icon)?>" alt="twitter footer icon"></li></a>
+                <?php endif; ?>
+
+                <?php if($yt_url && $youtube_icon):?>
+                    <a href="<?php echo esc_url($yt_url)?>"><li><img src="<?php echo esc_url($youtube_icon)?>" alt="youtube footer icon"></li></a>
+                <?php endif; ?>
+            </ul>
         </div>
-        <div class="footerBox">
-            <div class="socialMedia">
-                <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
-            </div>
+        <!-- NAVIGATION MENU -->
+        <?php
+            wp_nav_menu(array(
+                'menu' => 'Nav Menu',
+                'theme_location' => 'footer-menu',
+                'menu_class' => 'footer-menu',
+                'menu_id' => 'footer-id'
+            ))
+        ?>
+        <!-- COPYRIGHT -->
+        <div class="footerCopyright">
+            <span>© 2021 Love Unmasked | All Rights Reserved</span>
         </div>
-		
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'thesetup-practice01' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'thesetup-practice01' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'thesetup-practice01' ), 'thesetup-practice01', '<a href="http://underscores.me/">Grxcelyn</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
